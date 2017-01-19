@@ -377,12 +377,12 @@ function go() {
     phrase("c1 (c d) c (c b)");
     phrase("c1 c (c d) c (c b) b");
 
-    phrase("f f f f (g a) (a g) f (g a) (g f) g g f");
-    phrase("f f f f (g a) (a g) f (g a) (g f) g g f");
-    phrase("(f a) a a a (g a) g g g g g f (g a) (a g)");
-    phrase("f (g a) (g f) g g f");
-    phrase("f f f f f g a a (a bes) a a a a (g a) g f f");
-    phrase("f f f f (g a) (a g) f (g a) (g f) g g f");
+    phrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
+    phrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
+    phrase("(f1 a) a a a (g a) g g g g g f (g a) (a g)");
+    phrase("f1 (g a) (g f) g g f");
+    phrase("f1 f f f f g a a (a bes) a a a a (g a) g f f");
+    phrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
 }
 
 window.onload = () => { setup(); go () }

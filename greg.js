@@ -349,7 +349,7 @@ var staff_left_padding = 5;
 var staff_right_padding = 10;
 var inter_neume_horizontal_space = 20;
 
-function phrase(notes) {
+function renderPhrase(notes) {
     notes = parsePhrase(notes);
     var width = notes.length * inter_neume_horizontal_space +
         staff_left_padding + staff_right_padding;
@@ -370,19 +370,19 @@ function go() {
     _ctx.rect(0,0,_width,_height);
     _canvas.fillStyle="black";
 
-    phrase("a1 c c d c b c");
-    phrase("a1 c c c c b c");
-    phrase("c1 c c c c c c c c c c c c c b c");
-    phrase("c1 c c c c c c c c c c c c c c c c c c b c");
-    phrase("c1 (c d) c (c b)");
-    phrase("c1 c (c d) c (c b) b");
+    renderPhrase("a1 c c d c b c");
+    renderPhrase("a1 c c c c b c");
+    renderPhrase("c1 c c c c c c c c c c c c c b c");
+    renderPhrase("c1 c c c c c c c c c c c c c c c c c c b c");
+    renderPhrase("c1 (c d) c (c b)");
+    renderPhrase("c1 c (c d) c (c b) b");
 
-    phrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
-    phrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
-    phrase("(f1 a) a a a (g a) g g g g g f (g a) (a g)");
-    phrase("f1 (g a) (g f) g g f");
-    phrase("f1 f f f f g a a (a bes) a a a a (g a) g f f");
-    phrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
+    renderPhrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
+    renderPhrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
+    renderPhrase("(f1 a) a a a (g a) g g g g g f (g a) (a g)");
+    renderPhrase("f1 (g a) (g f) g g f");
+    renderPhrase("f1 f f f f g a a (a bes) a a a a (g a) g f f");
+    renderPhrase("f1 f f f (g a) (a g) f (g a) (g f) g g f");
 }
 
 window.onload = () => { setup(); go () }
